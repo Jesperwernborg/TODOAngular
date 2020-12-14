@@ -1,0 +1,16 @@
+.main-container{
+    font-family: 'Nerko One', cursive;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.listOfTodo{
+    width: 40%;
+    margin: auto;
+    .input-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,7 @@
+<div class="main-container">
+  <div class="listOfTodo">
+    <app-input-todo class="input-container" (newItemEvent)="addToList($event)"></app-input-todo>
+    <h2>Tasks for today</h2>
+    <app-todo-do *ngFor="let t of todos" (deleteItem)="deleteFromList($event)" [todo]="t"></app-todo-do>
+  </div>
+</div>

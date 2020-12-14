@@ -1,0 +1,18 @@
+li {
+    display: flex;
+    width: 100%;
+    padding: 6px 2px;
+    justify-content: space-between;
+    padding: 2px 10px 2px 10px;
+  }
+  li:hover .action {
+    display: block;
+  }
+  .action {
+    display: none;
+  
+    span {
+      margin: 0 10px;
+    }
+  }
+  

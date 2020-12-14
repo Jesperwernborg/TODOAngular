@@ -1,0 +1,62 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+li {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 2px solid transparent;
+  cursor: context-menu;
+  p{
+    font-size: 20px;
+  }
+  .fa-check-circle{
+    position: absolute;
+    font-size: 20px;
+    right: 60px;
+    bottom: 30%;
+    transition: all .2s ease-in-out;
+  }
+  .fa-trash {
+    position: absolute;
+    font-size: 20px;
+    right: 20px;
+    bottom: 30%;
+    transition: all .2s ease-in-out;
+  }
+  .fa-check-circle:hover {
+    color: green;
+    transform: scale(1.4);
+  }
+
+  .fa-trash:hover {
+    color: red;
+    transform: scale(1.4);
+  }
+  span:hover {
+    cursor: pointer;
+  }
+}
+li:hover {
+  border: 2px solid green;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  transition: 0.8s;
+}
+li:hover .action {
+  display: block;
+}
+.action {
+  display: none;
+
+  span {
+    margin: 0 10px;
+  }
+}
+
+.completed {
+  text-decoration: line-through;
+}

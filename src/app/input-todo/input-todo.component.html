@@ -1,0 +1,7 @@
+<div class="input-div">
+    <div class="input-border">
+    <input placeholder="What to do?" type="text" #theTodo (keyup)="handleKeyUp(theTodo.value)" [value]="theTodo.value"/>
+    <button (click)="sendToParent()">Add</button>
+    </div>
+</div>
+

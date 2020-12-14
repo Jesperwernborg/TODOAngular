@@ -1,0 +1,43 @@
+.input-div {
+  .input-border {
+    display: flex;
+    border: 2px solid rgb(146, 145, 145);
+    border-radius: 8px;
+    input:focus {
+      border: none;
+      outline: none;
+    }
+    button {
+      font-family: 'Nerko One', cursive;
+        color: rgb(14, 9, 9);
+    background-color: pink;
+      border: none;
+      border-radius: 5px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: 2px solid rgb(146, 145, 145);
+      transition:  0.5s;
+      cursor: pointer;
+    }
+    button:focus {
+      outline: none;
+      
+    }
+    button:hover {
+      padding-left: 25px;
+      background-color:rgb(253, 93, 120);
+    }
+    button:active {
+      transition: 0s;
+      outline: none;
+      background-color:purple;
+    }
+  }
+  input {
+    padding: 0;
+    padding: 4px 2px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Nerko One', cursive;
+  }
+}
